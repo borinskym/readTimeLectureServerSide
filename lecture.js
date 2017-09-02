@@ -2,11 +2,13 @@
 const AFK = 0, DONTGETIT = 1, KEEPINGUP = 2, THISISEASY = 3
 
 function Lecture(name){
-    this.name = name
-    this.afkVotes = 0
-    this.dontGetItVotes = 0
-    this.keepingUpVotes = 0
-    this.thisIsEasyVotes = 0
+    this.creationTime = new Date().getTime()
+    this.name = name;
+    this.isRunning = true;
+    this.afkVotes = 0;
+    this.dontGetItVotes = 0;
+    this.keepingUpVotes = 0;
+    this.tieVotes = 0
 }
 
 Lecture.prototype = {
@@ -23,7 +25,7 @@ Lecture.prototype = {
                 this.keepingUpVotes = func(this.keepingUpVotes)
                 break
             case THISISEASY:
-                this.thisIsEasyVotes = func(this.thisIsEasyVotes)
+                this.tieVotes = func(this.tieVotes)
                 break
 
         }
@@ -74,6 +76,12 @@ LectureContainer.prototype = {
     showLectureDetails(lectureName){
         let lect =  this.getLecture(lectureName)
         return lect.showRes()
+    },
+    forEach:function (f) {
+        debugger;
+       for (key in this.lectures){
+           f(this.lectures[key])
+       }
     }
 }
 

@@ -4,6 +4,8 @@ const mysql = require('mysql')
 const schedule = require('node-schedule')
 const myL = require('./lecture.js')
 
+const lectureStatisticJs = require('./lectureStatistic.js')
+
 
 
 const port = 3000
@@ -28,7 +30,13 @@ sqlConnection.connect(function(err) {
 
 var lectureContainer = myL.makeLectureContainer()
 
+var lectureStatisticsManager = lectureStatisticJs.createStatisticManager()
+
 var app = express()
+
+setInterval(function () {
+    addRunningLecturesToStatistics()
+}, 10000)
 
 
 app.use(function (req, res, next) {
@@ -56,21 +64,9 @@ app.use(function (req, res, next) {
 app.listen(port)
 
 
-
-
-var rule = new schedule.RecurrenceRule();
-
-rule.minute = new schedule.Range(0, 59, 1);
-
-// var j = schedule.scheduleJob(rule, function(){
-//     var value = "lect2, 27, 3, 9, '2017-07-01 00:01:00'"
-//     sqlConnection.query("INSERT INTO lects1  VALUES(\'lect2\', 27, 3, 9, \'2017-07-01 00:01:00\')")
-//
-//     console.log('got to the job part')
-// });
-
-
-
+// setInterval(function () {
+//     addRunningLecturesToStatistics()
+// }, 30000)
 
 app.get('/showLecture', function (req, res) {
 
@@ -261,9 +257,54 @@ app.get('/getLectureData', function (req, res) {
 
     json['ku'] = lecture.keepingUpVotes
 
-    json['tie'] = lecture.thisIsEasyVotes
+    json['tie'] = lecture.tieVotes
 
     res.end(JSON.stringify(json))
 
 })
+
+app.get('/getLectureStatisticJson', function (req, res) {
+    var queryData = url.parse(req.url, true).query;
+
+    var lecture = queryData['lecture']
+
+    var json = {}
+
+    var lect = lectureContainer.getLecture(lecture)
+
+    if(lect === undefined){
+        throw Error("the lecture not exist !")
+
+    }
+
+    json['startingTime'] = lect.startingTime;
+
+    json['data'] = lectureStatisticsManager.getLectureStatisticMap(lecture);
+
+    res.end(JSON.stringify(json))
+
+
+})
+
+
+app.get('/lectureStatisticDebug', function (req, res) {
+
+    res.end(lectureStatisticsManager.printStatistics())
+
+})
+
+app.get('/collectStatisticManualTrigger', function (req, res) {
+    addRunningLecturesToStatistics()
+    res.end("ok")
+})
+
+var addRunningLecturesToStatistics = function () {
+    var timeInMillisecond = new Date().getTime()
+
+    lectureContainer.forEach(lec =>{
+        if(lec.isRunning) {
+            lectureStatisticsManager.addLectureStatistic(lec.name, timeInMillisecond, lec.afkVotes, lec.dontGetItVotes, lec.keepingUpVotes, lec.tieVotes)
+        }
+    })
+}
 
