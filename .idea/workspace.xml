@@ -1,601 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/index.js" line="3" />
+    <bookmark url="file://$PROJECT_DIR$/index.js" line="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4674ece8-ce92-4765-bf52-e2304710dab5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/History.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c.sha256" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_batch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_index.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_info.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_key.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_llist.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_lmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_lset.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_lstack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_query.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_scan.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/aerospike_udf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_address.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_admin.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_arraylist.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_arraylist_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_async.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_async_proto.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_batch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_bin.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_boolean.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_bytes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_cluster.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_command.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_command_policy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_config.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_double.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_error.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_event.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_event_internal.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_geojson.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_hashmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_hashmap_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_host.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_info.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_integer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_job.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_key.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_ldt.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_list.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_list_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_list_operations.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_listener.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_log.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_lookup.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_map.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_map_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_map_operations.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_monitor.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_nil.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_node.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_operations.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_pair.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_partition.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_password.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_peers.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_pipe.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_policy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_predexp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_proto.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_query.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_random.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_rec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_record.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_record_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_scan.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_shm_cluster.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_socket.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_status.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_stream.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_string.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_stringmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_thread_pool.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_tls.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_udf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_util.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_val.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/as_vector.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_backoff.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_bitmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_brlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_bytelock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_cc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_cohort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_elide.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_fifo.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_hp_fifo.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_hp_stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_limits.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_malloc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_md.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_pflock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_ring.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_rwcohort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_rwlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_sequence.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_spinlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_stdbool.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_stddef.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_stdint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_stdlib.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_string.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_swlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/ck_tflock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/arm/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/arm/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/ck_cc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/ppc/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/ppc/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/ppc64/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/ppc64/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/sparcv9/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/sparcv9/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/x86/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/x86/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/x86_64/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/x86_64/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/gcc/x86_64/ck_pr_rtm.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/anderson.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/cas.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/clh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/dec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/fas.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/hclh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/mcs.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/aerospike/ck/spinlock/ticket.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/alloc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/cf_atomic.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/cf_b64.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/cf_byte_order.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/cf_clock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/cf_ll.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/cf_queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/include/citrusleaf/cf_types.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/lib/libaerospike.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/aerospike-client-c-libuv-devel-4.1.8.ubuntu16.04.x86_64.deb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_batch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_index.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_info.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_key.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_llist.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_lmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_lset.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_lstack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_query.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_scan.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/aerospike_udf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_address.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_admin.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_arraylist.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_arraylist_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_async.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_async_proto.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_batch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_bin.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_boolean.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_bytes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_cluster.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_command.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_command_policy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_config.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_double.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_error.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_event.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_event_internal.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_geojson.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_hashmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_hashmap_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_host.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_info.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_integer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_job.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_key.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_ldt.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_list.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_list_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_list_operations.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_listener.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_log.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_lookup.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_map.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_map_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_map_operations.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_monitor.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_nil.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_node.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_operations.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_pair.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_partition.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_password.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_peers.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_pipe.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_policy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_predexp.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_proto.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_query.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_random.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_rec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_record.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_record_iterator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_scan.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_shm_cluster.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_socket.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_status.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_stream.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_string.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_stringmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_thread_pool.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_tls.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_udf.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_util.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_val.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/as_vector.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_backoff.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_bitmap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_brlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_bytelock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_cc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_cohort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_elide.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_fifo.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_hp_fifo.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_hp_stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_limits.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_malloc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_md.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_pflock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_ring.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_rwcohort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_rwlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_sequence.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_spinlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_stdbool.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_stddef.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_stdint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_stdlib.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_string.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_swlock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/ck_tflock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/arm/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/arm/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/ck_cc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/ppc/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/ppc/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/ppc64/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/ppc64/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/sparcv9/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/sparcv9/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/x86/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/x86/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/x86_64/ck_f_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/x86_64/ck_pr.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/gcc/x86_64/ck_pr_rtm.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/anderson.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/cas.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/clh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/dec.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/fas.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/hclh.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/mcs.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/aerospike/ck/spinlock/ticket.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/alloc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/cf_atomic.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/cf_b64.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/cf_byte_order.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/cf_clock.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/cf_ll.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/cf_queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/include/citrusleaf/cf_types.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/aerospike-client-c/package/usr/lib/libaerospike.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/alerts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/inspect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/memory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/stats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/benchmarks/worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/binding.gyp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/aerospike.node.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike-client-c.stamp.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike.node.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/aerospike.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/apply_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/batch_exists.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/batch_get.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/batch_read_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/batch_select.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/cluster.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/exists_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/get_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/index_create.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/index_remove.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/info.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/info_foreach.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/job_info.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/operate_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/put_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/query_apply.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/query_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/query_background.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/query_foreach.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/remove_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/scan_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/scan_background.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/select_async.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/truncate.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/udf_register.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/client/udf_remove.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/config.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/index.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/job_status.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/log.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/maps.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/policy.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/predicates.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/scanPriority.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/status.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/ttl.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/enums/udf_languages.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/events.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/operations.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/policy.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/query.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/scan.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/util/conversions.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/Release/obj.target/aerospike/src/main/util/log.o.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/.deps/binding_gyp_aerospike_client_c_target_run_scripts_aerospike_client_c_sh.intermediate.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/aerospike.node" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike-client-c.stamp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike.node" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/aerospike.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/apply_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/batch_exists.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/batch_get.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/batch_read_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/batch_select.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/cluster.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/exists_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/get_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/index_create.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/index_remove.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/info.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/info_foreach.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/job_info.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/operate_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/put_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/query_apply.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/query_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/query_background.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/query_foreach.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/remove_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/scan_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/scan_background.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/select_async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/truncate.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/udf_register.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/client/udf_remove.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/config.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/index.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/job_status.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/log.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/maps.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/policy.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/predicates.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/scanPriority.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/status.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/ttl.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/enums/udf_languages.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/events.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/operations.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/policy.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/query.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/scan.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/util/conversions.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/Release/obj.target/aerospike/src/main/util/log.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/aerospike-client-c.target.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/aerospike.target.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/binding.Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/build/config.gypi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/add.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/append.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/batch_exists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/batch_get.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/batch_select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/execute.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/exists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/get.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/index_create.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/index_remove.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/info.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/info_host.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/iteration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/llist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/logging.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/operate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/prepend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/put.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/query.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/query.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/query_aggregate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/query_geospatial.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/range_exists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/range_get.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/range_put.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/range_remove.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/range_validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/remove.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/sample.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/scan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/scan.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/scan_aggregate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/scan_background.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/scan_info.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/udf_register.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/examples/udf_remove.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/aerospike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/aerospike_error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/double.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/event_loop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/filter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/geojson.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/index_job.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/info.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/job.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/key.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/lists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/llist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/maps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/operations.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/query.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/record_stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/scan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/udf_job.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/lib/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/aerospike.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/as.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/external/llist.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/external/lmap.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/external/lset.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/external/lstack.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/external/validate_all" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/CRC32.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/ldt_common.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/ldt_errors.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/lib_llist.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/lib_lmap.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/lib_lset.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/lib_lstack.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/validate_all" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/ldt/validate_lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/modules/lua-core/src/stream_ops.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/scripts/aerospike-client-c.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/scripts/build_apidocs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/scripts/os_version" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/scripts/shuffle_tests" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/scripts/wait-for-node.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/scripts/watch_tests" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/async.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/client.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/config.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/conversions.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/enums.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/events.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/log.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/operations.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/policy.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/query.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/include/scan.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/aerospike.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/apply_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/batch_exists.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/batch_get.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/batch_read_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/batch_select.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/cluster.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/exists_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/get_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/index_create.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/index_remove.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/info.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/info_foreach.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/job_info.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/operate_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/put_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/query_apply.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/query_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/query_background.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/query_foreach.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/remove_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/scan_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/scan_background.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/select_async.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/truncate.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/udf_register.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/client/udf_remove.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/config.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/index.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/job_status.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/log.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/maps.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/policy.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/predicates.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/scanPriority.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/status.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/ttl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/enums/udf_languages.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/events.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/operations.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/policy.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/query.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/scan.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/util/conversions.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/src/main/util/log.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/aerospike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/apply.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/batch_exists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/batch_get.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/batch_read.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/batch_select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/callback_handler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/cdt_list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/cdt_map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/double.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/exists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/generators/key.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/generators/metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/generators/put.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/generators/record.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/generators/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/generators/value.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/geojson.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/get.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/info.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/key.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/llist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/operate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/put.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/query.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/remove.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/scan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/stress/perfdata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/stress/query.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/stress/scan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/test_helper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/truncate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/udf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/udf.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/util/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/aerospike/test/utils.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectureStatistic.js" afterPath="$PROJECT_DIR$/lectureStatistic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -613,8 +25,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="505">
+              <caret line="369" column="0" lean-forward="true" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -643,8 +55,8 @@
       <file leaf-file-name="lectureStatistic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectureStatistic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            <state relative-caret-position="312">
+              <caret line="67" column="41" lean-forward="false" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -704,8 +116,8 @@
         <option value="$PROJECT_DIR$/Lecture.js" />
         <option value="$USER_HOME$/Downloads/page1.html" />
         <option value="$PROJECT_DIR$/lecture.js" />
-        <option value="$PROJECT_DIR$/lectureStatistic.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/lectureStatistic.js" />
       </list>
     </option>
   </component>
@@ -746,11 +158,6 @@
               <item name="webServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="webServer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="webServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webServer" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -761,7 +168,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -799,19 +206,20 @@
       <workItem from="1504376693112" duration="4068000" />
       <workItem from="1504387102513" duration="2009000" />
       <workItem from="1504436488453" duration="8916000" />
-      <workItem from="1504526120352" duration="1090000" />
+      <workItem from="1504526120352" duration="5710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95371000" />
+    <option name="totallyTimeSpent" value="99991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -835,7 +243,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1220,16 +628,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lectureStatistic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        <state relative-caret-position="312">
+          <caret line="67" column="41" lean-forward="false" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="505">
+          <caret line="369" column="0" lean-forward="true" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
           <folding />
         </state>
       </provider>

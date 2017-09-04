@@ -14,6 +14,8 @@ function LectureStatistics(lectureName){
     this.lectureName = lectureName
     //map between time in millisecond and lecture statistic entry
     this.lectureStatisticEntryMap = {}
+    //map between time in millisecond and the subject that is moved to 
+    this.time2SubjectsMap = {}
 
 }
 
@@ -37,6 +39,9 @@ LectureStatistics.prototype = {
         }
 
         return ansStr
+    },
+    addSubject:function (time, subj) {
+        this.time2SubjectsMap[time] = subj
     }
 }
 
@@ -48,22 +53,27 @@ function LectureStatisticManager(){
 LectureStatisticManager.prototype = {
 
     constructor:LectureStatisticManager,
-    
-    addLectureStatistic:function (lectureName, timeInMillisecond, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes) {
 
-        lecureStatistic = this.lectureStatisticsMap[lectureName]
+    initOrGet: function (lectureName) {
+        var lecureStatistic = this.lectureStatisticsMap[lectureName]
 
-        if(lecureStatistic === undefined){
+        if (lecureStatistic === undefined || lecureStatistic == null) {
 
-                lecureStatistic = new LectureStatistics(lectureName)
-
-                this.lectureStatisticsMap[lectureName] = lecureStatistic
+            this.lectureStatisticsMap[lectureName] = new LectureStatistics(lectureName)
 
         }
+        return this.lectureStatisticsMap[lectureName]
+    }, addLectureStatistic:function (lectureName, timeInMillisecond, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes) {
+
+        var lecureStatistic = this.initOrGet(lectureName);
 
         lecureStatistic.addLectureStatisticEntry(timeInMillisecond, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes)
     },
+    addSubjectStatistic:function (lectureName, subjectName, timeInMillisecond) {
+        var lecureStatistic = this.initOrGet(lectureName);
 
+        lecureStatistic.addSubject(timeInMillisecond, subjectName)
+    },
     printStatistics:function () {
         var ansString = ""
         for(key in this.lectureStatisticsMap){
@@ -88,8 +98,23 @@ LectureStatisticManager.prototype = {
 
 
     },
+    getLectureStatisticSubjects:function (lectureName) {
+        var lectureStatistic = this.lectureStatisticsMap[lectureName];
+
+        if(lectureStatistic === undefined){
+            throw Error("the lecture requested is null ! : " + lectureName)
+        }else{
+            return lectureStatistic.time2SubjectsMap
+        }
+
+    },
     removeLectureStatistic:function (lecture) {
         this.lectureStatisticsMap[lecture] = undefined
+    },
+    addSubjectTimeToLecture:function (lecture, time, subject) {
+        var lectureStatistic = this.lectureStatisticsMap[lecture]
+
+        lectureStatistic.addSubject(time, subject)
     }
 }
 

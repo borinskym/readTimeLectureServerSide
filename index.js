@@ -1,9 +1,8 @@
 const url = require('url')
 const express = require('express')
 const mysql = require('mysql')
-const schedule = require('node-schedule')
-const myL = require('./lecture.js')
 const redis = require('redis');
+const myL = require('./lecture.js')
 const lectureStatisticJs = require('./lectureStatistic.js')
 
 
@@ -341,6 +340,21 @@ app.get('/getLectureStatisticFromRedis', function (req, res) {
 
 })
 
+
+app.get('/addSubjectToLecture', function (req, res) {
+
+    var queryData = url.parse(req.url, true).query;
+
+    var lecture = queryData['lecture']
+
+    var subject = queryData['lecture']
+
+    var timeInMillisecond = new Date().getTime()
+
+    lectureStatisticsManager.addSubjectStatistic(lecture, subject, timeInMillisecond)
+
+})
+
 var getLectureStatisticJson = function (lect) {
 
     var json = {}
@@ -348,6 +362,8 @@ var getLectureStatisticJson = function (lect) {
     json['startingTime'] = lect.creationTime;
 
     json['data'] = lectureStatisticsManager.getLectureStatisticMap(lect.name);
+
+    json['subjects'] = lectureStatisticsManager.getLectureStatisticSubjects(lect.name)
 
     return JSON.stringify(json)
 }
