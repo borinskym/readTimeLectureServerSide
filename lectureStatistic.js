@@ -1,8 +1,12 @@
 function LectureStatisicEntry(afkVotes, dontGetItVotes, keepingUpVotes, tieVotes){
-    this._afkVotes = afkVotes
-    this._dgiVotes = dontGetItVotes
-    this._kupVotes = keepingUpVotes
-    this._tieVotes = tieVotes
+    //afk votes
+    this._afk = afkVotes
+    //dont get it votes
+    this._dgi = dontGetItVotes
+    //keeping up votes
+    this._kup = keepingUpVotes
+    //this is easy votes
+    this._tie = tieVotes
 }
 
 
@@ -26,10 +30,10 @@ LectureStatistics.prototype = {
         var ansStr = ""
         for(key in this.lectureStatisticEntryMap){
             var lectureStatisticEntry = this.lectureStatisticEntryMap[key]
-            ansStr = ansStr + "the statistic in time " + key + " is :"  + "afk votes : " + lectureStatisticEntry._afkVotes
-            + " dontGetItVotes : " + lectureStatisticEntry._dgiVotes
-                +" keepingUpVotes : " +lectureStatisticEntry._kupVotes
-                + " this is easy votes : " + lectureStatisticEntry._tieVotes + "\n"
+            ansStr = ansStr + "the statistic in time " + key + " is :"  + "afk votes : " + lectureStatisticEntry._afk
+            + " dontGetItVotes : " + lectureStatisticEntry._dgi
+                +" keepingUpVotes : " +lectureStatisticEntry._kup
+                + " this is easy votes : " + lectureStatisticEntry._tie + "\n"
         }
 
         return ansStr
@@ -47,10 +51,8 @@ LectureStatisticManager.prototype = {
     
     addLectureStatistic:function (lectureName, timeInMillisecond, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes) {
 
-        debugger;
-
         lecureStatistic = this.lectureStatisticsMap[lectureName]
-lectureStatisticEntryMap
+
         if(lecureStatistic === undefined){
 
                 lecureStatistic = new LectureStatistics(lectureName)
@@ -85,6 +87,9 @@ lectureStatisticEntryMap
         }
 
 
+    },
+    removeLectureStatistic:function (lecture) {
+        this.lectureStatisticsMap[lecture] = undefined
     }
 }
 

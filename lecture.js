@@ -55,12 +55,7 @@ LectureContainer.prototype = {
         }
     },
     getLecture:function (name) {
-        let lec =  this.lectures[name]
-
-        if(lec == null){
-            throw Error('trying to get lecture that is not exist')
-        }
-        return lec
+       return this.lectures[name]
     },
     changeCounter:function(lectureName, feelingToIncreament, feelingToDecrease){
         let lec = this.getLecture(lectureName)
@@ -77,8 +72,13 @@ LectureContainer.prototype = {
         let lect =  this.getLecture(lectureName)
         return lect.showRes()
     },
+    stopLecture:function (lect) {
+        this.lectures[lect].isRunning = false
+    },
+    removeLecture:function (lect) {
+        this.lectures[lect] = undefined
+    },
     forEach:function (f) {
-        debugger;
        for (key in this.lectures){
            f(this.lectures[key])
        }

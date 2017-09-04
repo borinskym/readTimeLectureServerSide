@@ -3,8 +3,15 @@ const express = require('express')
 const mysql = require('mysql')
 const schedule = require('node-schedule')
 const myL = require('./lecture.js')
-
+const redis = require('redis');
 const lectureStatisticJs = require('./lectureStatistic.js')
+
+
+var redisClient = redis.createClient();
+
+redisClient.on('connect', function() {
+    console.log('connected to redis ');
+});
 
 
 
@@ -18,6 +25,7 @@ var sqlConnection = mysql.createConnection({
     database : 'lectures'
 });
 
+
 sqlConnection.connect(function(err) {
     if (err) {
         console.error('error connecting: ' + err.stack);
@@ -26,7 +34,6 @@ sqlConnection.connect(function(err) {
 
     console.log('connected to mysql as id ' + sqlConnection.threadId);
 });
-
 
 var lectureContainer = myL.makeLectureContainer()
 
@@ -63,10 +70,6 @@ app.use(function (req, res, next) {
 
 app.listen(port)
 
-
-// setInterval(function () {
-//     addRunningLecturesToStatistics()
-// }, 30000)
 
 app.get('/showLecture', function (req, res) {
 
@@ -249,39 +252,33 @@ app.get('/getLectureData', function (req, res) {
 
     var lecture = lectureContainer.getLecture(lectureUrl)
 
-    var json = {}
+    if(lecture === null || lecture === undefined){
+        res.end("lectureNotExist")
+    }else {
 
-    json['afk'] = lecture.afkVotes
+        var json = {}
 
-    json['dgi'] = lecture.dontGetItVotes
+        json['afk'] = lecture.afkVotes
 
-    json['ku'] = lecture.keepingUpVotes
+        json['dgi'] = lecture.dontGetItVotes
 
-    json['tie'] = lecture.tieVotes
+        json['ku'] = lecture.keepingUpVotes
 
-    res.end(JSON.stringify(json))
+        json['tie'] = lecture.tieVotes
+
+        res.end(JSON.stringify(json))
+    }
 
 })
 
-app.get('/getLectureStatisticJson', function (req, res) {
+app.get('/getLectureStatisticJsonFromCache', function (req, res) {
     var queryData = url.parse(req.url, true).query;
 
     var lecture = queryData['lecture']
 
-    var json = {}
+    var json = getLectureStatisticJson(lecture)
 
-    var lect = lectureContainer.getLecture(lecture)
-
-    if(lect === undefined){
-        throw Error("the lecture not exist !")
-
-    }
-
-    json['startingTime'] = lect.startingTime;
-
-    json['data'] = lectureStatisticsManager.getLectureStatisticMap(lecture);
-
-    res.end(JSON.stringify(json))
+    res.end(json)
 
 
 })
@@ -298,13 +295,72 @@ app.get('/collectStatisticManualTrigger', function (req, res) {
     res.end("ok")
 })
 
+
+app.get('/endLecture', function (req, res) {
+
+    var queryData = url.parse(req.url, true).query;
+
+    var lectureName = queryData['lecture']
+
+    lectureContainer.stopLecture(lectureName)
+
+    var json = getLectureStatisticJson(lectureContainer.getLecture(lectureName))
+
+
+    redisClient.set(lectureName, json, function(err, reply) {
+        if(err){
+            throw new Error("error occured in set to redis : "  + err );
+        } else{
+            // we succeeded on setting to redis, we can erase from cache
+
+            //remove the lecture himself
+            lectureContainer.removeLecture(lectureName)
+            //remove the lecture statistics
+            lectureStatisticsManager.removeLectureStatistic(lectureName)
+        }
+    })
+
+    res.end("ok")
+})
+
+app.get('/getLectureStatisticFromRedis', function (req, res) {
+
+    var queryData = url.parse(req.url, true).query;
+
+    var lecture = queryData['lecture']
+
+    redisClient.get(lecture, function(err, reply) {
+        if(err){
+            throw new Error("error occured in get from redis : "  + err );
+        } else if(reply === null){
+            res.end("empty")
+        } else {
+            res.end(reply)
+        }
+    });
+
+})
+
+var getLectureStatisticJson = function (lect) {
+
+    var json = {}
+
+    json['startingTime'] = lect.creationTime;
+
+    json['data'] = lectureStatisticsManager.getLectureStatisticMap(lect.name);
+
+    return JSON.stringify(json)
+}
+
+
 var addRunningLecturesToStatistics = function () {
     var timeInMillisecond = new Date().getTime()
 
     lectureContainer.forEach(lec =>{
-        if(lec.isRunning) {
-            lectureStatisticsManager.addLectureStatistic(lec.name, timeInMillisecond, lec.afkVotes, lec.dontGetItVotes, lec.keepingUpVotes, lec.tieVotes)
+        if( lec !== undefined && lec !== null) {
+            if (lec.isRunning) {
+                lectureStatisticsManager.addLectureStatistic(lec.name, timeInMillisecond, lec.afkVotes, lec.dontGetItVotes, lec.keepingUpVotes, lec.tieVotes)
+            }
         }
     })
 }
-
