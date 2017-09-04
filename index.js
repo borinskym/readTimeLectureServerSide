@@ -43,7 +43,7 @@ var app = express()
 
 setInterval(function () {
     addRunningLecturesToStatistics()
-}, 10000)
+}, 30000)
 
 
 app.use(function (req, res, next) {
