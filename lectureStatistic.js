@@ -13,9 +13,9 @@ function LectureStatisicEntry(afkVotes, dontGetItVotes, keepingUpVotes, tieVotes
 function LectureStatistics(lectureName){
     this.lectureName = lectureName
     //map between time in millisecond and lecture statistic entry
-    this.lectureStatisticEntryMap = {}
+    this.time2lectureStatisticEntry = {}
     //map between time in millisecond and the subject that is moved to 
-    this.time2SubjectsMap = {}
+    this.time2Subjects = {}
 
 }
 
@@ -24,14 +24,14 @@ LectureStatistics.prototype = {
 
     addLectureStatisticEntry:function (timeInMillisecind, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes) {
 
-        this.lectureStatisticEntryMap[timeInMillisecind] = new LectureStatisicEntry(afkVotes, dontGetItVotes, keepingUpVotes, tieVotes)
+        this.time2lectureStatisticEntry[timeInMillisecind] = new LectureStatisicEntry(afkVotes, dontGetItVotes, keepingUpVotes, tieVotes)
 
     },
     printLecturesStatistic:function () {
 
         var ansStr = ""
-        for(key in this.lectureStatisticEntryMap){
-            var lectureStatisticEntry = this.lectureStatisticEntryMap[key]
+        for(key in this.time2lectureStatisticEntry){
+            var lectureStatisticEntry = this.time2lectureStatisticEntry[key]
             ansStr = ansStr + "the statistic in time " + key + " is :"  + "afk votes : " + lectureStatisticEntry._afk
             + " dontGetItVotes : " + lectureStatisticEntry._dgi
                 +" keepingUpVotes : " +lectureStatisticEntry._kup
@@ -41,7 +41,7 @@ LectureStatistics.prototype = {
         return ansStr
     },
     addSubject:function (time, subj) {
-        this.time2SubjectsMap[time] = subj
+        this.time2Subjects[time] = subj
     }
 }
 
@@ -93,7 +93,7 @@ LectureStatisticManager.prototype = {
             throw Error("the lecture requested is null ! : " + lectureName)
         }
         else{
-            return lectureStatistic.lectureStatisticEntryMap;
+            return lectureStatistic.time2lectureStatisticEntry;
         }
 
 
@@ -104,7 +104,7 @@ LectureStatisticManager.prototype = {
         if(lectureStatistic === undefined){
             throw Error("the lecture requested is null ! : " + lectureName)
         }else{
-            return lectureStatistic.time2SubjectsMap
+            return lectureStatistic.time2Subjects
         }
 
     },
