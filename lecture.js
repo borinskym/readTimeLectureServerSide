@@ -1,9 +1,10 @@
 
 const AFK = 0, DONTGETIT = 1, KEEPINGUP = 2, THISISEASY = 3
 
-function Lecture(name){
-    this.creationTime = new Date().getTime()
+function Lecture(name, creationTime, subject) {
+    this.creationTime = creationTime
     this.name = name;
+    this.currentSubject = subject;
     this.isRunning = true;
     this.afkVotes = 0;
     this.dontGetItVotes = 0;
@@ -34,8 +35,17 @@ Lecture.prototype = {
         return "sleepy : " + this.afkVotes
         + " angry : " + this.dontGetItVotes
         + " following " + this.keepingUpVotes
-    }
+    },
+    moveAllCountersToAFK(){
+        this.afkVotes = this.afkVotes + this.dontGetItVotes +  this.keepingUpVotes + this.tieVotes
+        this.dontGetItVotes = 0;
+        this.keepingUpVotes = 0;
+        this.tieVotes = 0;
 
+    },
+    setCurrentSubject(subj){
+        this.currentSubject = subj
+    }
 }
 
 function LectureContainer() {
@@ -48,11 +58,8 @@ LectureContainer.prototype = {
     constructor:LectureContainer,
 
 
-    addLectureIfNotExist:function (name) {
-
-        if(this.lectures[name] === undefined ){
-            this.lectures[name] = new Lecture(name)
-        }
+    addLecture:function (name, creationTime, subject) {
+        this.lectures[name] = new Lecture(name, creationTime, subject)
     },
     getLecture:function (name) {
        return this.lectures[name]

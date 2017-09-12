@@ -218,11 +218,38 @@ app.get('/startLecture', function (req, res) {
 
     var lectureName = queryData['lecture']
 
-    lectureContainer.addLectureIfNotExist(lectureName)
+    var subject = queryData['subject']
+
+    let time = new Date().getTime();
+
+    lectureContainer.addLecture(lectureName, time, subject)
+
+    lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time)
 
     res.end("ok")
 
 })
+
+app.get('/nextSubject', function (req, res) {
+    const queryData = url.parse(req.url, true).query;
+
+    let lectureName = queryData['lecture'];
+
+    let subject = queryData['subject'];
+
+    let time = new Date().getTime();
+
+    let lecture = lectureContainer.getLecture(lectureName);
+
+    lecture.setCurrentSubject(subject);
+
+    lecture.moveAllCountersToAFK();
+
+    lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time)
+
+    res.end("ok")
+
+});
 
 app.get('/addVote',  function (request, response) {
 
