@@ -270,6 +270,23 @@ app.get('/getLectureData', function (req, res) {
 
 })
 
+app.get('/deleteLecture', function (req, res) {
+    var queryData = url.parse(req.url, true).query;
+
+    var lecture = queryData['lecture']
+
+    var sqlQuery = "delete from lectures where name = " + "'" + lecture + "'" + ";"
+
+    sqlConnection.query(sqlQuery, function (err, result, fields) {
+
+        if(err) throw Error("there is error in the query : " + err);
+
+        res.end("ok")
+
+    })
+
+})
+
 app.get('/getLectureStatisticJsonFromCache', function (req, res) {
     var queryData = url.parse(req.url, true).query;
 
