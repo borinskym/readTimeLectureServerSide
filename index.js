@@ -251,6 +251,18 @@ app.get('/nextSubject', function (req, res) {
 
 });
 
+app.get('currentSubject', function (req, res) {
+
+    const queryData = url.parse(req.url, true).query;
+
+    let lectureName = queryData['lecture'];
+
+    let lect = lectureContainer.getLecture(lectureName)
+
+    res.end(lect.currentSubject)
+
+})
+
 app.get('/addVote',  function (request, response) {
 
     var queryData = url.parse(request.url, true).query;
