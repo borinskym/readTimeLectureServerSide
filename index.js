@@ -251,7 +251,7 @@ app.get('/nextSubject', function (req, res) {
 
 });
 
-app.get('currentSubject', function (req, res) {
+app.get('/currentSubject', function (req, res) {
 
     const queryData = url.parse(req.url, true).query;
 
