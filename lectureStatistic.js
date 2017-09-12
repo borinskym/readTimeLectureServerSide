@@ -90,7 +90,7 @@ LectureStatisticManager.prototype = {
         var lectureStatistic = this.lectureStatisticsMap[lectureName];
 
         if(lectureStatistic === undefined){
-            throw Error("the lecture requested is null ! : " + lectureName)
+            return {}
         }
         else{
             return lectureStatistic.time2lectureStatisticEntry;
