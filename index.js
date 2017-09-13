@@ -42,7 +42,7 @@ var app = express()
 
 setInterval(function () {
     addRunningLecturesToStatistics()
-}, 30000)
+}, 1000)
 
 
 app.use(function (req, res, next) {
@@ -260,8 +260,7 @@ app.get('/currentSubject', function (req, res) {
     let lect = lectureContainer.getLecture(lectureName)
 
     res.end(lect.currentSubject)
-
-})
+});
 
 app.get('/addVote',  function (request, response) {
 
