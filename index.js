@@ -224,7 +224,7 @@ app.get('/startLecture', function (req, res) {
 
     lectureContainer.addLecture(lectureName, time, subject)
 
-    lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time)
+    lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time, 0, 0, 0, 0)
 
     res.end("ok")
 
@@ -243,9 +243,9 @@ app.get('/nextSubject', function (req, res) {
 
     lecture.setCurrentSubject(subject);
 
-    lecture.moveAllCountersToAFK();
+    lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time, lecture.afkVotes, lecture.dontGetItVotes, lecture.keepingUpVotes, lecture.tieVotes)
 
-    lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time)
+    lecture.moveAllCountersToAFK();
 
     res.end("ok")
 
@@ -395,20 +395,6 @@ app.get('/getLectureStatisticFromRedis', function (req, res) {
 
 })
 
-
-app.get('/addSubjectToLecture', function (req, res) {
-
-    var queryData = url.parse(req.url, true).query;
-
-    var lecture = queryData['lecture']
-
-    var subject = queryData['lecture']
-
-    var timeInMillisecond = new Date().getTime()
-
-    lectureStatisticsManager.addSubjectStatistic(lecture, subject, timeInMillisecond)
-
-})
 
 var getLectureStatisticJson = function (lect) {
 

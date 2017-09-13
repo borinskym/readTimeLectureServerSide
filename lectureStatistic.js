@@ -40,8 +40,21 @@ LectureStatistics.prototype = {
 
         return ansStr
     },
-    addSubject:function (time, subj) {
-        this.time2Subjects[time] = subj
+    addSubject:function (time, subj, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes) {
+
+        var json = {}
+
+        json["name"] = subj
+
+        json["_afk"] = afkVotes
+
+        json["_dgi"] = dontGetItVotes
+
+        json["_kup"] = keepingUpVotes
+
+        json["_tie"] = tieVotes
+
+        this.time2Subjects[time] = json
     }
 }
 
@@ -69,10 +82,10 @@ LectureStatisticManager.prototype = {
 
         lecureStatistic.addLectureStatisticEntry(timeInMillisecond, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes)
     },
-    addSubjectStatistic:function (lectureName, subjectName, timeInMillisecond) {
+    addSubjectStatistic:function (lectureName, subjectName, timeInMillisecond, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes) {
         var lecureStatistic = this.initOrGet(lectureName);
 
-        lecureStatistic.addSubject(timeInMillisecond, subjectName)
+        lecureStatistic.addSubject(timeInMillisecond, subjectName, afkVotes, dontGetItVotes, keepingUpVotes, tieVotes)
     },
     printStatistics:function () {
         var ansString = ""
