@@ -64,7 +64,7 @@ LectureContainer.prototype = {
     getLecture:function (name) {
        return this.lectures[name]
     },
-    changeCounter:function(lectureName, feelingToIncreament, feelingToDecrease){
+    changeCounterDecrement:function(lectureName, feelingToIncreament, feelingToDecrease){
         let lec = this.getLecture(lectureName)
         lec.changeCounter(feelingToIncreament, num => num + 1)
         lec.changeCounter(feelingToDecrease, num => num -1)

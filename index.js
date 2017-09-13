@@ -268,12 +268,13 @@ app.get('/addVote',  function (request, response) {
 
     let voteToIncrement = parseInt(String(queryData['vote']));
 
-    let voteToDecrement = queryData['voteToDecrement'];
+    let voteDownQ = queryData['voteDown']
+
+    debugger;
 
     let lectureName = queryData['lecture']
-    if(voteToDecrement ==! null) {
-        lectureContainer.changeCounter(lectureName, voteToIncrement,  voteToDecrement)
-
+    if(!(voteDownQ === undefined)) {
+        lectureContainer.changeCounterDecrement(lectureName, voteToIncrement,  parseInt(String(voteDownQ)))
     }else{
         lectureContainer.changeCounter(lectureName, voteToIncrement)
     }
