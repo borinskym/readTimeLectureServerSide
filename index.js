@@ -1,9 +1,9 @@
-const url = require('url')
-const express = require('express')
-const mysql = require('mysql')
+const url = require('url');
+const express = require('express');
+const mysql = require('mysql');
 const redis = require('redis');
-const myL = require('./lecture.js')
-const lectureStatisticJs = require('./lectureStatistic.js')
+const myL = require('./lecture.js');
+const lectureStatisticJs = require('./lectureStatistic.js');
 
 
 var redisClient = redis.createClient();
@@ -14,7 +14,7 @@ redisClient.on('connect', function() {
 
 
 
-const port = 3000
+const port = 3000;
 
 
 var sqlConnection = mysql.createConnection({
@@ -34,15 +34,15 @@ sqlConnection.connect(function(err) {
     console.log('connected to mysql as id ' + sqlConnection.threadId);
 });
 
-var lectureContainer = myL.makeLectureContainer()
+var lectureContainer = myL.makeLectureContainer();
 
-var lectureStatisticsManager = lectureStatisticJs.createStatisticManager()
+var lectureStatisticsManager = lectureStatisticJs.createStatisticManager();
 
-var app = express()
+var app = express();
 
 setInterval(function () {
     addRunningLecturesToStatistics()
-}, 1000)
+}, 1000);
 
 
 app.use(function (req, res, next) {
@@ -67,7 +67,7 @@ app.use(function (req, res, next) {
 
 
 
-app.listen(port)
+app.listen(port);
 
 
 app.get('/showLecture', function (req, res) {
@@ -81,43 +81,43 @@ app.get('/addLecture', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
 
-    var user = queryData['user']
+    var user = queryData['user'];
 
-    var lectureName = queryData['name']
+    var lectureName = queryData['name'];
 
-    var course = queryData['course']
+    var course = queryData['course'];
 
-    var date = queryData['date']
+    var date = queryData['date'];
 
-    var hour = queryData['hour']
+    var hour = queryData['hour'];
 
-    var length = queryData['length']
+    var length = queryData['length'];
 
-    var subjects = queryData['subjects']
+    var subjects = queryData['subjects'];
 
-    var dateSplited = date.split("/")
+    var dateSplited = date.split("/");
 
-    var year = dateSplited[2]
+    var year = dateSplited[2];
 
-    var month = dateSplited[0]
+    var month = dateSplited[0];
 
-    var day = dateSplited[1]
+    var day = dateSplited[1];
 
-    var dateParsedForSQLInsertion = year + "-" + month + "-" + day + " " + hour +":00"
+    var dateParsedForSQLInsertion = year + "-" + month + "-" + day + " " + hour +":00";
 
-    var selectQuery = "select count(1) from lectures where name = " + "'" + lectureName + "'"
+    var selectQuery = "select count(1) from lectures where name = " + "'" + lectureName + "'";
 
 
     var valueOfInsertionQuery = "(" + "'" +lectureName +"'" +"," + "'" + user + "'" + "," +
         "'" + course + "'" + "," + "'" + subjects + "'" + "," +
-        "'" + dateParsedForSQLInsertion + "'" + "," + length + ")"
+        "'" + dateParsedForSQLInsertion + "'" + "," + length + ")";
 
 
     var insertionQuery = "insert into lectures VALUES" + valueOfInsertionQuery
 
     sqlConnection.query(selectQuery, function (err, result, fields) {
         if(err) throw new Error("there is error in the first query : " + err);
-        num = parseInt(result[0]['count(1)'])
+        num = parseInt(result[0]['count(1)']);
         if(num > 0){
             res.end("exists")
         }else {
@@ -129,15 +129,15 @@ app.get('/addLecture', function (req, res) {
         }
 
     });
-})
+});
 
 app.get('/verify', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
 
-    email = queryData['email']
+    email = queryData['email'];
 
-    password = queryData['password']
+    password = queryData['password'];
 
     query = "select count(1) from users where email = " + "'" + email + "'" + "and password = " + "'" + password + "'"
 
@@ -157,9 +157,9 @@ app.get('/newUser', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
 
-    email = queryData['email']
+    email = queryData['email'];
 
-    password = queryData['password']
+    password = queryData['password'];
 
     let values =  "(" + "'" +  email + "'" + "," + "'" + password + "'" + ")";
 
@@ -167,11 +167,11 @@ app.get('/newUser', function (req, res) {
 
     secondQuery = "insert into users VALUES " + values;
 
-    console.log(firstQuery)
+    console.log(firstQuery);
 
      sqlConnection.query(firstQuery, function (err, result, fields) {
             if(err) throw new Error("there is error in the first query : " + err);
-            num = parseInt(result[0]['count(1)'])
+            num = parseInt(result[0]['count(1)']);
 
             if(num > 0){
                 res.end("exists")
@@ -189,46 +189,41 @@ app.get('/newUser', function (req, res) {
 app.get('/getLectures', function (req, res) {
     var queryData = url.parse(req.url, true).query;
 
-    var user = queryData['user']
+    var user = queryData['user'];
 
     var sqlQuery = "select * from lectures where lecturer = " + "'" + user + "'"
 
-    var json = {}
+    var json = {};
 
     sqlConnection.query(sqlQuery, function (err, result, fields) {
 
         result.forEach(function (res) {
             var lecture = res['name']
 
-            var insideObj = {}
+            var insideObj = {};
             insideObj['course'] = res['course']
             insideObj['subjects'] = res['subjects']
             insideObj['date'] = res['date']
 
             json[lecture]= insideObj
 
-        })
+        });
 
        res.end(JSON.stringify(json))
     })
-})
+});
 
 app.get('/startLecture', function (req, res) {
     var queryData = url.parse(req.url, true).query;
 
-    var lectureName = queryData['lecture']
-
-    var subject = queryData['subject']
+    var lectureName = queryData['lecture'];
 
     let time = new Date().getTime();
 
-    lectureContainer.addLecture(lectureName, time, subject)
-
-    lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time, 0, 0, 0, 0)
+    lectureContainer.addLecture(lectureName, time, subject);
 
     res.end("ok")
-
-})
+});
 
 app.get('/nextSubject', function (req, res) {
     const queryData = url.parse(req.url, true).query;
@@ -257,52 +252,50 @@ app.get('/currentSubject', function (req, res) {
 
     let lectureName = queryData['lecture'];
 
-    let lect = lectureContainer.getLecture(lectureName)
+    let lect = lectureContainer.getLecture(lectureName);
 
     res.end(lect.currentSubject)
 });
 
 app.get('/addVote',  function (request, response) {
 
-    var queryData = url.parse(request.url, true).query;
+    let queryData = url.parse(request.url, true).query;
 
     let voteToIncrement = parseInt(String(queryData['vote']));
 
-    let voteDownQ = queryData['voteDown']
+    let voteDownQ = queryData['voteDown'];
 
-    debugger;
-
-    let lectureName = queryData['lecture']
+    let lectureName = queryData['lecture'];
     if(!(voteDownQ === undefined)) {
         lectureContainer.changeCounterDecrement(lectureName, voteToIncrement,  parseInt(String(voteDownQ)))
     }else{
         lectureContainer.changeCounter(lectureName, voteToIncrement)
     }
     response.end("vote succesfully added");
-})
+});
 
 
 app.get('/getLectureData', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
 
-    var lectureUrl = queryData['lecture']
+    var lectureUrl = queryData['lecture'];
 
-    var lecture = lectureContainer.getLecture(lectureUrl)
+    var lecture = lectureContainer.getLecture(lectureUrl);
 
     if(lecture === null || lecture === undefined){
         res.end("lectureNotExist")
     }else {
 
-        var json = {}
+        var json = {};
 
-        json['afk'] = lecture.afkVotes
+        json['afk'] = lecture.afkVotes;
 
-        json['dgi'] = lecture.dontGetItVotes
+        json['dgi'] = lecture.dontGetItVotes;
 
-        json['ku'] = lecture.keepingUpVotes
+        json['ku'] = lecture.keepingUpVotes;
 
-        json['tie'] = lecture.tieVotes
+        json['tie'] = lecture.tieVotes;
 
         res.end(JSON.stringify(json))
     }
@@ -312,9 +305,9 @@ app.get('/getLectureData', function (req, res) {
 app.get('/deleteLecture', function (req, res) {
     var queryData = url.parse(req.url, true).query;
 
-    var lecture = queryData['lecture']
+    var lecture = queryData['lecture'];
 
-    var sqlQuery = "delete from lectures where name = " + "'" + lecture + "'" + ";"
+    var sqlQuery = "delete from lectures where name = " + "'" + lecture + "'" + ";";
 
     sqlConnection.query(sqlQuery, function (err, result, fields) {
 
@@ -323,43 +316,42 @@ app.get('/deleteLecture', function (req, res) {
         res.end("ok")
 
     })
-
-})
+});
 
 app.get('/getLectureStatisticJsonFromCache', function (req, res) {
     var queryData = url.parse(req.url, true).query;
 
-    var lecture = queryData['lecture']
+    var lecture = queryData['lecture'];
 
-    var json = getLectureStatisticJson(lecture)
+    var json = getLectureStatisticJson(lecture);
 
     res.end(json)
 
 
-})
+});
 
 
 app.get('/lectureStatisticDebug', function (req, res) {
 
     res.end(lectureStatisticsManager.printStatistics())
 
-})
+});
 
 app.get('/collectStatisticManualTrigger', function (req, res) {
-    addRunningLecturesToStatistics()
+    addRunningLecturesToStatistics();
     res.end("ok")
-})
+});
 
 
 app.get('/endLecture', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
 
-    var lectureName = queryData['lecture']
+    var lectureName = queryData['lecture'];
 
-    lectureContainer.stopLecture(lectureName)
+    lectureContainer.stopLecture(lectureName);
 
-    var json = getLectureStatisticJson(lectureContainer.getLecture(lectureName))
+    var json = getLectureStatisticJson(lectureContainer.getLecture(lectureName));
 
 
     redisClient.set(lectureName, json, function(err, reply) {
@@ -369,20 +361,20 @@ app.get('/endLecture', function (req, res) {
             // we succeeded on setting to redis, we can erase from cache
 
             //remove the lecture himself
-            lectureContainer.removeLecture(lectureName)
+            lectureContainer.removeLecture(lectureName);
             //remove the lecture statistics
-            lectureStatisticsManager.removeLectureStatistic(lectureName)
+            lectureStatisticsManager.removeLectureStatistic(lectureName);
         }
-    })
+    });
 
     res.end("ok")
-})
+});
 
 app.get('/getLectureStatisticFromRedis', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
 
-    var lecture = queryData['lecture']
+    var lecture = queryData['lecture'];
 
     redisClient.get(lecture, function(err, reply) {
         if(err){
@@ -394,25 +386,25 @@ app.get('/getLectureStatisticFromRedis', function (req, res) {
         }
     });
 
-})
+});
 
 
 var getLectureStatisticJson = function (lect) {
 
-    var json = {}
+    var json = {};
 
     json['startingTime'] = lect.creationTime;
 
     json['data'] = lectureStatisticsManager.getLectureStatisticMap(lect.name);
 
-    json['subjects'] = lectureStatisticsManager.getLectureStatisticSubjects(lect.name)
+    json['subjects'] = lectureStatisticsManager.getLectureStatisticSubjects(lect.name);
 
     return JSON.stringify(json)
-}
+};
 
 
 var addRunningLecturesToStatistics = function () {
-    var timeInMillisecond = new Date().getTime()
+    var timeInMillisecond = new Date().getTime();
 
     lectureContainer.forEach(lec =>{
         if( lec !== undefined && lec !== null) {
@@ -421,4 +413,4 @@ var addRunningLecturesToStatistics = function () {
             }
         }
     })
-}
+};
