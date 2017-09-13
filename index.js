@@ -218,6 +218,8 @@ app.get('/startLecture', function (req, res) {
 
     var lectureName = queryData['lecture'];
 
+    var subject = queryData['subject']
+
     let time = new Date().getTime();
 
     lectureContainer.addLecture(lectureName, time, subject);
@@ -232,11 +234,13 @@ app.get('/nextSubject', function (req, res) {
 
     let subject = queryData['subject'];
 
+    let nextSubject = queryData['nextSubject']
+
     let time = new Date().getTime();
 
     let lecture = lectureContainer.getLecture(lectureName);
 
-    lecture.setCurrentSubject(subject);
+    lecture.setCurrentSubject(nextSubject);
 
     lectureStatisticsManager.addSubjectStatistic(lectureName, subject, time, lecture.afkVotes, lecture.dontGetItVotes, lecture.keepingUpVotes, lecture.tieVotes)
 
