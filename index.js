@@ -8,6 +8,8 @@ const lectureStatisticJs = require('./lectureStatistic.js');
 
 var redisClient = redis.createClient();
 
+
+
 redisClient.on('connect', function() {
     console.log('connected to redis ');
 });
@@ -77,6 +79,7 @@ app.get('/showLecture', function (req, res) {
     res.end(lectureContainer.showLectureDetails(queryData['lecture']))
 })
 
+
 app.get('/addLecture', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
@@ -105,31 +108,60 @@ app.get('/addLecture', function (req, res) {
 
     var dateParsedForSQLInsertion = year + "-" + month + "-" + day + " " + hour +":00";
 
+    var howManyLectureExistQuery = "select count(1) from lectures";
+
+
     var selectQuery = "select count(1) from lectures where name = " + "'" + lectureName + "'";
 
+    sqlConnection.query(howManyLectureExistQuery, function (err, result, fields) {
 
-    var valueOfInsertionQuery = "(" + "'" +lectureName +"'" +"," + "'" + user + "'" + "," +
-        "'" + course + "'" + "," + "'" + subjects + "'" + "," +
-        "'" + dateParsedForSQLInsertion + "'" + "," + length + ")";
+        if(err) throw new Error("there is error in the second query : " + err);
+
+        var numOfLectures = parseInt(result[0]['count(1)']);
+
+        var codeOfLecture = numOfLectures +1;
+
+        var valueOfInsertionQuery = "(" + "'" +lectureName +"'" +"," + "'" + user + "'" + "," +
+            "'" + course + "'" + "," + "'" + subjects + "'" + "," +
+            "'" + dateParsedForSQLInsertion + "'" + "," + length + "," + codeOfLecture + ")";
+
+        var insertionQuery = "insert into lectures VALUES" + valueOfInsertionQuery
+
+        sqlConnection.query(selectQuery, function (err, result, fields) {
+            if(err) throw new Error("there is error in the second query : " + err);
+            num = parseInt(result[0]['count(1)']);
+            if(num > 0){
+                res.end("exists")
+            }else {
+                sqlConnection.query(insertionQuery,
+                    function (err, result, fields) {
+                        if(err) throw Error("there is error in the third query : " + err);
+                        res.end("true")
+                    })
+            }
+
+        });
 
 
-    var insertionQuery = "insert into lectures VALUES" + valueOfInsertionQuery
+    })
+});
+
+
+
+app.get('/getCodeOfLecture', function (req, res) {
+    var queryData = url.parse(req.url, true).query;
+
+    var lectureName = queryData['lecture']
+
+    var selectQuery = "select code from lectures where name = " + "'" + lectureName + "'";
 
     sqlConnection.query(selectQuery, function (err, result, fields) {
-        if(err) throw new Error("there is error in the first query : " + err);
-        num = parseInt(result[0]['count(1)']);
-        if(num > 0){
-            res.end("exists")
-        }else {
-            sqlConnection.query(insertionQuery,
-                function (err, result, fields) {
-                    if(err) throw Error("there is error in the second query : " + err);
-                    res.end("true")
-                })
-        }
 
-    });
-});
+        if(err) throw Error("there is error in the getCodeOfLecture query : " + err);
+
+        res.end(String(result[0]['code']))
+    })
+})
 
 app.get('/verify', function (req, res) {
 
