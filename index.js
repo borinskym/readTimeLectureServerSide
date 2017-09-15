@@ -164,6 +164,43 @@ app.get('/getCodeOfLecture', function (req, res) {
     })
 })
 
+app.get('/getLectureByCode', function (req, res) {
+
+    var queryData = url.parse(req.url, true).query;
+
+    var code = queryData['code']
+
+    var selectQuery = "select name from lectures where name = " + "'" + code + "'";
+
+    sqlConnection.query(selectQuery, function (err, result, fields) {
+
+        if(err) throw Error("there is error in the getCodeOfLecture query : " + err);
+
+        if(result.length === 0){
+            res.end("fail")
+        }else{
+            res.end(String(result[0]['name']))
+        }
+
+    })
+})
+
+
+app.get('/getCourseOfLecture', function (req, res) {
+    var queryData = url.parse(req.url, true).query;
+
+    var lectureName = queryData['lecture']
+
+    var selectQuery = "select course from lectures where name = " + "'" + lectureName + "'";
+
+    sqlConnection.query(selectQuery, function (err, result, fields) {
+
+        if(err) throw Error("there is error in the getCodeOfLecture query : " + err);
+
+        res.end(String(result[0]['course']))
+    })
+})
+
 app.get('/verify', function (req, res) {
 
     var queryData = url.parse(req.url, true).query;
@@ -308,7 +345,7 @@ app.get('/addVote',  function (request, response) {
     }else{
         lectureContainer.changeCounter(lectureName, voteToIncrement)
     }
-    response.end("vote succesfully added");
+    response.end("ok");
 });
 
 
