@@ -170,7 +170,7 @@ app.get('/getLectureByCode', function (req, res) {
 
     var code = queryData['code']
 
-    var selectQuery = "select name from lectures where name = " + "'" + code + "'";
+    var selectQuery = "select name from lectures where code = " + "'" + code + "'";
 
     sqlConnection.query(selectQuery, function (err, result, fields) {
 
