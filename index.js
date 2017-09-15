@@ -67,10 +67,11 @@ app.use(function (req, res, next) {
 });
 
 
-
-
 app.listen(port);
 
+app.get('/ping',function (req, res) {
+    res.end('got ping !!!')
+})
 
 app.get('/showLecture', function (req, res) {
 
