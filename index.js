@@ -328,7 +328,12 @@ app.get('/currentSubject', function (req, res) {
 
     let lect = lectureContainer.getLecture(lectureName);
 
-    res.end(lect.currentSubject)
+    if(lect === undefined || lect === null){
+        res.end("lecture ended")
+    }else{
+        res.end(lect.currentSubject)
+    }
+
 });
 
 app.get('/addVote',  function (request, response) {
